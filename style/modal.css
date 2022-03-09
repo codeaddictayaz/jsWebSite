@@ -1,0 +1,132 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+html {
+  font-size: 0.875rem;
+}
+
+/*16px*/
+body {
+  background: #fcfcfc;
+  font-family: "Fira Code";
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 35rem;
+}
+
+small,
+.textSmall {
+  font-size: 0.8rem;
+}
+
+.imgContainer {
+  width: 55vw;
+  max-width: 600px;
+  border: 0.2rem solid #882c96;
+  border-radius: 0.25rem;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  margin: 1rem;
+}
+
+.btn,
+#btn {
+  padding: 0.5rem 1rem;
+  border: transparent;
+  background-color: #663399;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in-out all;
+  box-shadow: 0 4px 6px -1px 663399, 0 2px 4px -2px 663399;
+  font-size: 1.3rem;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.btn:hover,
+#btn:hover {
+  background-color: #663399;
+  box-shadow: 0 20px 25px -5px #663399, 0 8px 10px -6px #663399;
+  color: #f5f5f5;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 36.75px) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../html/laptop2.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modalContainer {
+  position: absolute;
+  background-color: rgba(100, 0, 0, 0.3);
+  width: 100vw;
+  height: calc(100vh - 36.75px) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out all;
+}
+
+.modal {
+  background-color: #f5f5f5;
+  height: 15rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+header {
+  text-align: center;
+  font-size: 1.5rem;
+}
+header a {
+  color: #882c96;
+  transition: 0.3s ease-in-out all;
+}
+header a:hover,
+header a :active {
+  color: #663399;
+}/*# sourceMappingURL=modal.css.map */

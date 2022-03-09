@@ -1,0 +1,149 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+/*16px*/
+body {
+  background: white;
+  font-family: Quicksand SemiBold;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+small,
+.textSmall {
+  font-size: 0.8rem;
+}
+
+.imgContainer {
+  width: 55vw;
+  max-width: 600px;
+  border: 0.2rem solid #882c96;
+  border-radius: 0.25rem;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  margin: 1rem;
+  border: none;
+}
+
+.btn,
+#btn {
+  padding: 0.5rem 1rem;
+  border: transparent;
+  background-color: rebeccapurple;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in-out all;
+  box-shadow: 0 4px 6px -1px rebeccapurple, 0 2px 4px -2px rebeccapurple;
+  font-size: 0.9rem;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.btn:hover,
+#btn:hover {
+  background-color: rebeccapurple;
+  box-shadow: 0 20px 25px -5px #50287a, 0 8px 10px -6px #502a97;
+  color: #f5f5f5;
+}
+
+.form {
+  width: 90vw;
+  max-width: 620px;
+  background-color: #f5f5f5;
+  border-right: 0.25rem;
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.form .formLabel {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+.form .formTextArea,
+.form .formInput {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  background-color: #94a3b8;
+}
+.form .formTextArea {
+  height: 7rem;
+}
+.form .formRow {
+  margin-bottom: 1.2rem;
+}
+.form .btnBlock {
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.heart {
+  position: fixed;
+  top: -1vh;
+  transform: translateY(0);
+  -webkit-animation: fall linear forwards;
+          animation: fall linear forwards;
+}
+
+@-webkit-keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+header {
+  text-align: center;
+  font-size: 1.5rem;
+}
+header a {
+  color: #882c96;
+  transition: 0.3s ease-in-out all;
+}
+header a:hover,
+header a :active {
+  color: purple;
+}/*# sourceMappingURL=heart.css.map */
